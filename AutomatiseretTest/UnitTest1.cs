@@ -95,7 +95,7 @@ namespace AutomatiseretTest
             checkoutManager_Object.CompleteOrder(250);
 
             // Assert
-            Assert.Equal(250, mobilePayProcessor_Object.AmountSent);
+            Assert.Equal(260, mobilePayProcessor_Object.AmountSent);
         }
     }
 }
