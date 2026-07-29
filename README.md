@@ -7,6 +7,8 @@ der SKAL være placeret i mappen /github/workflows.
 
 I projektet her er denne fil navngivet ci_cd.yaml. Indholdet af denne fil er vist herunder :
 
+ -------------------------------------------------------------------------------------------------------------------------------------------------
+
 name: .NET Core Build and Test
 
 on: push: branches: - master pull_request: branches: - master
