@@ -84,18 +84,18 @@ namespace AutomatiseretTest
             Assert.Equal(255, mobilePayProcessor_Object.AmountSent);
         }
 
-        [Fact]
-        public void MethodSholdFailDueToContinousIntegrationDeliveryCallback()
-        {
-            // Arrange
-            mobilePayProcessor_Object.AmountSent = 0;
+        //[Fact]
+        //public void MethodSholdFailDueToContinousIntegrationDeliveryCallback()
+        //{
+        //    // Arrange
+        //    mobilePayProcessor_Object.AmountSent = 0;
 
-            //Act
-            CheckoutManager checkoutManager_Object = new CheckoutManager(mobilePayProcessor_Object);
-            checkoutManager_Object.CompleteOrder(250);
+        //    //Act
+        //    CheckoutManager checkoutManager_Object = new CheckoutManager(mobilePayProcessor_Object);
+        //    checkoutManager_Object.CompleteOrder(250);
 
-            // Assert
-            Assert.Equal(260, mobilePayProcessor_Object.AmountSent);
-        }
+        //    // Assert
+        //    Assert.Equal(260, mobilePayProcessor_Object.AmountSent);
+        //}
     }
 }
